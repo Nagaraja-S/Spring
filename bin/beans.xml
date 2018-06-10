@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<!-- 
+
+<bean id="triangle" class="com.nagaraj.spring.Shape">
+	<property name="dimension" ref="dimension" /> 
+	<constructor-arg value="10"></constructor-arg>
+	<constructor-arg value="tringlee"></constructor-arg>
+</bean>
+
+-->
+<!-- 
+	
+<bean id="dimension" class="com.nagaraj.spring.Dimension">
+
+	<constructor-arg value="10"></constructor-arg>
+	<constructor-arg value="20"></constructor-arg>
+	
+	
+</bean>
+
+-->
+
+<bean id="triangle" class="com.nagaraj.spring.Shape" autowire="constructor">
+	<property name="name" value="Triangle" /> 
+	<property name="size" value="20" /> 
+
+</bean>
+
+
+<bean id="dimension" class="com.nagaraj.spring.Dimension">
+
+	<constructor-arg value="10"></constructor-arg>
+	<constructor-arg value="20"></constructor-arg>
+	
+	
+</bean>
+
+
+</beans>
